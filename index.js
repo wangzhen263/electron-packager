@@ -123,6 +123,8 @@ function createSeries (opts, archs, platforms) {
             },
             function (cb) {
               debug(`Extracting ${zipPath} to ${buildDir}`)
+              console.log('#zipPath: ', zipPath);
+              console.log('#buildDir: ', buildDir);
               extract(zipPath, {dir: buildDir}, cb)
             },
             function (cb) {
